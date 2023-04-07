@@ -54,6 +54,11 @@ nav {
             color: v.$darkergrey;
         }
     }
+
+    .hamburger,
+    .hamburger-label {
+        display: none;
+    }
 }
 
 nav ul {
@@ -395,20 +400,33 @@ input {
 
 /* Media Queries*/
 @media (max-width: 600px) {
-    input[type="checkbox"] {
+    nav ul {
+        display: none;
+    }
+    nav .nav-shopping-bag {
+        display: none;
+    }
+    nav .hamburger-label {
+        display: block;
+    }
+    nav .hamburger:checked ~ul {
         display: block;
     }
 }
+    /*input[type="checkbox"] {
+        display: block;
+    }
 
-input[type="checkbox"] {
-    appearance: none;
-    width: 60px;
+
+/*input[type="checkbox"] {
+    /*appearance: none;*/
+    /*width: 60px;
     height: 60px;
     min-width: 60px;
     min-height: 60px;
     cursor: pointer;
-    background: url(/novas-project/assets/icons/icons8-menu-rounded-32.png) center / cover no-repeat;
-}
+    /*background: url(/novas-project/assets/icons/icons8-menu-rounded-32.png) center / cover no-repeat*/
+
 
 @media (max-width: 600px) {
 

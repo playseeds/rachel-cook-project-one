@@ -23,4 +23,17 @@ formElement.addEventListener("submit", function(event) {
 
 
 //Making mobile hamburger menu functional
+
+const navUl = document.querySelector("nav.ul");
+let clicked = false;
+
+const hamburger = document.querySelector(".hamburger-label"); 
+hamburger.addEventListener("click", function(){
+    if (clicked===false){
+      navUl.style.display="block"
+    }
+});
+
+
+
 //at say 960px screen sizes and smaller, the hamburger menu should appear per media query, and the nav links should disappear and flex-direction: column when you click on the hamburger menu.  What do I need to use JS for to make them more "functional" than they are now, since they currently link to the correct pages?  Is it not possible to do that within a hamburger menu using HTML?
