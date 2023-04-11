@@ -24,15 +24,39 @@ formElement.addEventListener("submit", function(event) {
 
 //Making mobile hamburger menu functional
 
-const navUl = document.querySelector("nav.ul");
-let clicked = false;
+const menu = document.querySelector(".menu");
+const hamburger = document.querySelector(".hamburgerMenu");
+const open = document.querySelector(".fa-solid.fa.bars");
+const close = document.querySelector(".fa-solid.fa-xmark"); 
 
-const hamburger = document.querySelector(".hamburger-label"); 
-hamburger.addEventListener("click", function(){
-    if (clicked===false){
-      navUl.style.display="block"
-    }
+hamburger.addEventListener("click", function() {
+  // Open menu
+  if (!menu.classList.add("showMenu")) {
+    menu.classList.add("showMenu");
+    open.style.display = "none";
+    close.style.display = "block";
+    close.style.fontSize = "2rem";
+    close.style.paddingTop = "10px";
+    menu.style.display = "block";
+  }
+  // Close menu
+  else {
+    menu.classList.remove("showMenu");
+    open.style.display = "block";
+    close.style.display = "none";
+    menu.style.display = "flex";
+  }
 });
+
+// const navUl = document.querySelector("nav.ul");
+// let clicked = false;
+
+// const hamburger = document.querySelector(".hamburger-label"); 
+// hamburger.addEventListener("click", function(){
+//     if (clicked===false){
+//       navUl.style.display="block"
+//     }
+// });
 
 
 
