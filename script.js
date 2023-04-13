@@ -59,8 +59,19 @@ hamburger.addEventListener("click", function() {
 
 //at say 960px screen sizes and smaller, the hamburger menu should appear per media query, and the nav links should disappear and flex-direction: column when you click on the hamburger menu.  What do I need to use JS for to make them more "functional" than they are now, since they currently link to the correct pages?  Is it not possible to do that within a hamburger menu using HTML?
 
-//PSEUDOCODE EXAMPLE FOR PROJECT TWO
 
+//PSEUDOCODE DRAFT FOR PROJECT TWO
+
+
+// IN BRIEF
+// Step 1: set up firebase
+// Step 2: get data onto firebase
+// Step 3: get data FROM firebase
+// Step 4: filter data to remove out of stock and no image products
+// Step 5: display products on the page
+
+
+// IN GREATER DETAIL
 //// Create a file (firebase.js) to configure and export the Firebase object.
 
 // Import the database object, and any required Firebase modules at the top of the main app file (app.js)
