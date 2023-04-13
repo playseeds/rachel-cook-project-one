@@ -23,21 +23,46 @@ search returns the product object of every product matching the search query
 
 //example
 {
-    allUsers: {
-        gnjlgnelkgnjekrntgjkrndsegl: {
-            name: "safi!"
-            favFood: "salad",
-            otherFavFoods: {
-                second: "curry",
-                // etc....
-            },
-            smart: true
-        },
-        frweuofnrjlpnmrefrweolknmrewl: {
-            name: "Esther!",
-            favFood: "not getting any pretzles"
-        }
-    }
-}
+    title: 'Bowie Tee',
+    url: 'images/bowie.jpg',
+    price: 19.99,
+    stock: 4,
+  },
+  {
+    title: 'Don\'t Know Tee',
+    url: 'images/dontevenknow.jpg',
+    price: 22.50,
+    stock: 8,
+  },
+  {
+    title: 'Doughnut Jean Jacket',
+    url: 'images/doughnut.jpg',
+    price: 59.00,
+    stock: 5,
+  },
+  {
+    title: 'Journey Tee',
+    url: 'images/journey.jpg',
+    price: 22.99,
+    stock: 6,
+  },
+  {
+    title: 'Skeleton Jean Jacket',
+    url: 'images/someurl.jpg',
+    price: 30.00,
+    stock: 0,
+  },
+  {
+    title: 'Skeleton Hand Tee',
+    url: 'images/skeleton.jpg',
+    price: 30.00,
+    stock: 10,
+  },
+  {
+    title: 'Juno Hoodie',
+    price: 50.00,
+    stock: 4,
+  }
+]
 
 
