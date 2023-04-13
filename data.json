@@ -1,0 +1,43 @@
+// Add all product data to Firebase (images, price, title, etc).
+
+image:
+price:
+title:
+
+//display the number of items currently added to the user's cart
+
+set numbers of items current addred to the user's cart
+
+// If we hit stretch goal we can then refactor data to include:
+// Remove an item from the cart.
+
+remove a product object from the cart
+
+// See the total price of all items.
+
+
+
+//Implement a search bar that allows users to search for products by name.
+
+search returns the product object of every product matching the search query
+
+//example
+{
+    allUsers: {
+        gnjlgnelkgnjekrntgjkrndsegl: {
+            name: "safi!"
+            favFood: "salad",
+            otherFavFoods: {
+                second: "curry",
+                // etc....
+            },
+            smart: true
+        },
+        frweuofnrjlpnmrefrweolknmrewl: {
+            name: "Esther!",
+            favFood: "not getting any pretzles"
+        }
+    }
+}
+
+
