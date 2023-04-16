@@ -356,7 +356,7 @@ header .text-container {
       -ms-flex-pack: left;
           justify-content: left;
   height: 250px;
-  width: 250px;
+  width: 25%;
   position: absolute;
   top: 20%;
   left: 15%;
@@ -391,10 +391,13 @@ nav .nav-shopping-bag {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 nav .nav-shopping-bag p {
   font-size: 12px;
   color: #333;
+  position: absolute;
+  top: 0px;
 }
 nav .hamburger,
 nav .hamburger-label {
@@ -512,6 +515,7 @@ header p {
   width: calc(20% - 1rem);
   margin: 0.5rem;
   border: 1px solid rgb(240, 233, 233);
+  position: relative;
 }
 
 .sale,
@@ -519,9 +523,9 @@ header p {
   text-transform: uppercase;
   color: white;
   font-size: 14px;
-  position: relative;
-  top: -230px;
-  width: 25%;
+  position: absolute;
+  top: 0px;
+  width: 50px;
   text-align: center;
   padding: 3px 0 3px 0;
 }
@@ -697,7 +701,6 @@ footer .text-container {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
-  width: 250px;
   margin: 10px 0 10px 0;
   /*width: calc(25%);*/
 }
@@ -718,6 +721,18 @@ footer .logo img {
   width: calc(25% + 50px);
   height: 100%;
   margin: 0;
+}
+
+.footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer-container .slogan,
+.footer-container .profile,
+.footer-container .newsletter,
+.footer-container .contact-info {
+  width: 25%;
 }
 
 input {
@@ -761,7 +776,24 @@ input {
     }
 }*/
 /* Media Queries*/
-@media (max-width: 600px) {
+@media (max-width: 1125px) {
+  .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer-container .profile,
+  .footer-container .slogan,
+  .footer-container .contact-info {
+    width: 33.3333333333%;
+  }
+  .footer-container .newsletter {
+    width: 100%;
+  }
+}
+@media (max-width: 690px) {
   nav ul {
     display: none;
   }
@@ -788,7 +820,7 @@ min-width: 60px;
 min-height: 60px;
 cursor: pointer;
 /*background: url(/novas-project/assets/icons/icons8-menu-rounded-32.png) center / cover no-repeat*/
-@media (max-width: 600px) {
+@media (max-width: 690px) {
   .vertical-items ul,
   .featured-sale ul,
   .couches ul,
