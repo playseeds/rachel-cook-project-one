@@ -10,6 +10,24 @@
 
 
 // IN GREATER DETAIL
+
+//SHEH'S DRAFT
+// Create a file (firebase.js) to configure and export the Firebase object.
+// Import the database object, and any required Firebase modules at the top of the main app file (app.js)
+// Call getDatabase() and ref() to create a reference to the Firebase database.
+// Create onValue(?) to load current stock on page refresh
+// Create an event listener on the search button/field
+    // Prevent the submit from causing the page to refresh (using the event.preventDefault() method).
+    // Get what the user wrote in the text input (using the .value property).
+// If search bar drop down - create html elements that append showing links to what the user has typed in the field
+// If we create separate search page that pops up
+  // create event listener for user clicking on search icon
+  // ^ that would transition the user to a separate page with search bar + results
+// Add event listeners to "add to cart" buttons
+// Connect shopping cart image to event listener so that it counts each time the user clicks on "add to cart"
+
+//RACHEL'S DRAFT
+
 //// Create a file (firebase.js) to configure and export the Firebase object.
 
 // Import the database object, and any required Firebase modules at the top of the main app file (app.js)
