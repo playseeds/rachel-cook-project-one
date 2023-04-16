@@ -15,7 +15,7 @@ header {
         flex-direction: column;
         justify-content: left;
         height: 250px;
-        width: 250px;
+        width: 25%;
         position: absolute;
         top: calc(20%);
         left: calc(15%);
@@ -48,11 +48,20 @@ nav {
         height: 100%;
         margin: 5px 0 10px 25px;
         display: flex;
+        position: relative;
+        // why isn't the number 2 moving via position?
 
         p {
             font-size: 12px;
             color: v.$darkergrey;
+            position: absolute;
+            top: 0px;
         }
+    }
+
+    .hamburger,
+    .hamburger-label {
+        display: none;
     }
 }
 
@@ -157,6 +166,7 @@ header p {
             width: calc(100% / 5 - 1rem);
             margin: .5rem;
             border: 1px solid rgb(240, 233, 233);
+            position: relative;
         }
     }
 }
@@ -166,9 +176,9 @@ header p {
     text-transform: uppercase;
     color: white;
     font-size: 14px;
-    position: relative;
-    top: -230px;
-    width: 25%;
+    position: absolute;
+    top: 0px;
+    width: 50px;
     text-align: center;
     padding: 3px 0 3px 0;
 }
@@ -330,7 +340,7 @@ footer {
 
     .text-container {
         justify-content: left;
-        width: 250px;
+        //width: 250px;
         margin: 10px 0 10px 0;
         /*width: calc(25%);*/
     }
@@ -350,6 +360,16 @@ footer {
         width: calc(25% + 50px);
         height: 100%;
         margin: 0;
+    }
+}
+
+.footer-container {
+    display: flex;
+    .slogan,
+    .profile,
+    .newsletter,
+    .contact-info {
+        width: 25%;
     }
 }
 
@@ -394,23 +414,52 @@ input {
 }*/
 
 /* Media Queries*/
-@media (max-width: 600px) {
-    input[type="checkbox"] {
-        display: block;
+@media (max-width: 1125px){
+    .footer-container {
+        display: flex;
+        //flex-direction: column;
+        flex-wrap: wrap;
+        .profile,
+        .slogan,
+        .contact-info {
+          width: calc(100% / 3); 
+        }
+        .newsletter {
+            width: 100%;
+        }
     }
 }
 
-input[type="checkbox"] {
-    appearance: none;
-    width: 60px;
+@media (max-width: 690px) {
+    nav ul {
+        display: none;
+    }
+    nav .nav-shopping-bag {
+        display: none;
+    }
+    nav .hamburger-label {
+        display: block;
+    }
+    nav .hamburger:checked ~ul {
+        display: block;
+    }
+}
+    /*input[type="checkbox"] {
+        display: block;
+    }
+
+
+/*input[type="checkbox"] {
+    /*appearance: none;*/
+    /*width: 60px;
     height: 60px;
     min-width: 60px;
     min-height: 60px;
     cursor: pointer;
-    background: url(/novas-project/assets/icons/icons8-menu-rounded-32.png) center / cover no-repeat;
-}
+    /*background: url(/novas-project/assets/icons/icons8-menu-rounded-32.png) center / cover no-repeat*/
 
-@media (max-width: 600px) {
+
+@media (max-width: 690px) {
 
     .vertical-items ul,
     .featured-sale ul,
@@ -421,8 +470,13 @@ input[type="checkbox"] {
 
         li {
             width: 100%;
-        }
-    }
+        }    
+     }
+    // footer .text-container{
+    //     //display: flex;
+    //     //flex-wrap: wrap;
+    //     //width: 50%;
+    // }
 }
 
 /*@media (max-width: 600px) {
